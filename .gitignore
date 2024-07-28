@@ -1,4 +1,9 @@
+#   Pastas
 testes/
 log/
 SAT/
 __pycache__/
+
+
+# Tipos de arquivos
+*.log
