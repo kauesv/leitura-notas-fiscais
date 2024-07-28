@@ -1,10 +1,6 @@
-import os
-import sys
-import urllib3
 from bs4 import BeautifulSoup   #pip3 install beautifulsoup4
 import re
 import requests
-import time
 from urls import URLS
 
 
