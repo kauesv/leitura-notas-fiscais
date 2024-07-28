@@ -1,12 +1,19 @@
 from bs4 import BeautifulSoup   #pip3 install beautifulsoup4
 import re
 import requests
+import sys
 from urls import URLS
+from utils import valida_nfce
 
 
 # --------
 #   
 url = URLS[1]
+
+# --------
+#   Valida URL
+if not valida_nfce(url):
+    sys.exit("ERRO - Url fora do padrão")
 
 # O headers é para evitar o erro 406
 # https://airbrake.io/blog/http-errors/406-not-acceptable
